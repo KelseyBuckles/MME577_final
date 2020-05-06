@@ -1,0 +1,5 @@
+<launch>
+	<node name="server" pkg="kelsey_services" type="service_server.py" output="screen" />
+	<node name="cliet" pkg="kelsey_services" type="service_client.py" output="screen" />
+
+</launch>

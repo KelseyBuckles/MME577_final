@@ -1,0 +1,4 @@
+<launch>
+	<node name="message" pkg="Kelsey_topics" type="message_publisher.py" output="screen" />
+	<node name="topic" pkg="Kelsey_topics" type="topic_publisher.py" output="screen" />
+</launch>
