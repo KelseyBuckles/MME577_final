@@ -1,15 +1,13 @@
-# example
 
-This is an example README!
 
-## Here's a sub section
-
-## Here's a sub section I added locally
-:}
-
-# ROS package: |package name|
+# ROS package: MME577_final
 
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
+This package includes 3 subpackages: kelsey_topics, kelsey_actions, kelsey_services, along with their corresponding launch files.
+### kelsey_topics contains message and topic publisher and subscriber nodes under the names message_publisher.py, message_subscriber.py, topic_publisher.py, and topic_subscriber.py which allows nodes to communicate by publishing (speaking), and subscribing (listening).
+### This package also includes a custom message description--Complex.msg--for messages containing real and imaginary numbers.
+### kelsey_actions
+### kelsey_services
 
 ## Requirements
 
@@ -26,5 +24,8 @@ This is an example README!
 ## Usage
 
 |Usage information for key methods and commands.|
+
+## Questions
+For further questions, please contact the maintainer and sole contributer of this package, Kelsey Buckles at kelsey.buckles@stmartin.edu.
 
 
