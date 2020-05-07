@@ -10,7 +10,6 @@ kelsey_services includes subpackages where one node provides a function to the o
 
 ## Requirements
 
-|Describe the type of system this will work on. ROS version, OS, etc.|
 This system will work on Linux based machines running Ubuntu Bionic 18.04.4, ROS Melodic Morenia, and Python 2.
 
 ## Installation and configuration
