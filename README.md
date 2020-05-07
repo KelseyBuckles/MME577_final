@@ -4,10 +4,10 @@
 
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
 This package includes 3 subpackages: kelsey_topics, kelsey_actions, kelsey_services, along with their corresponding launch files.
-### kelsey_topics contains message and topic publisher and subscriber nodes under the names message_publisher.py, message_subscriber.py, topic_publisher.py, and topic_subscriber.py which allows nodes to communicate by publishing (speaking), and subscribing (listening).
-### This package also includes a custom message description--Complex.msg--for messages containing real and imaginary numbers.
-### kelsey_actions
-### kelsey_services
+kelsey_topics contains message and topic publisher and subscriber nodes under the names message_publisher.py, message_subscriber.py, topic_publisher.py, and topic_subscriber.py which allows nodes to communicate by publishing (speaking), and subscribing (listening).
+This package also includes a custom message description--Complex.msg--for messages containing real and imaginary numbers.
+kelsey_actions is where subpackages that ask nodes to actually DO things would live. Currently, the only action is Timer.action, which waits a certain amount of time, keeps track of the total actual wait time and total number of feedback updates sent, and prints time elapsed and time remaining as feedback on each time step (note that this is different from a service since it provides feedback during execution).
+kelsey_services includes subpackages where one node provides a function to the other nodes. Currently the only service file in there is WordCount.srv, which counts words 
 
 ## Requirements
 
