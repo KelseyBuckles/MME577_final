@@ -14,19 +14,23 @@ This system will work on Linux based machines running Ubuntu Bionic 18.04.4, ROS
 
 ## Installation and configuration
 
-Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and clone this repository from a terminal window in your machine, into a ROS workspace's src directory. Then, navigate to your workspace root, and build the workspace using `catkin_make`. Then, source the workspace using `source devel/setup.bash`. You can generally launch the desired subpackage using the format `roslaunch <name of subpackage> <launch file name>`. For eample, to launch the kelsey_actions subpackage, use `roslaunch kelsey_actions fancy_action.launch`. An exception is the services subpackage which will need a message to count the words of. This launch command will be of the form `roslaunch kelsey_services fancy_service.launch <enter your own message here>`. Additionally, kelsey_topics has 2 launch files that need to be launched, so the command to launch that subpackage will be `roslaunch kelsey_topics fancy_topic_publisher.launch fancy_topic_subscriber.launch`.
+Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and clone this repository from a terminal window in your machine, into a ROS workspace's src directory. Then, navigate to your workspace root, and build the workspace using `catkin_make`. Then, source the workspace using `source devel/setup.bash`. You can generally launch the desired subpackage using the format `roslaunch <name of subpackage> <launch file name>`. 
+### kelsey_actions
+tolaunch the kelsey_actions subpackage, use `roslaunch kelsey_actions fancy_action.launch`.
+### kelsey_services
+To launch the kelsey_services subpackage you will need a message to count the words of. This launch command will be of the form `roslaunch kelsey_services fancy_service.launch <enter your own message here>`. 
+### kelsey_topics 
+kelsey_topics has 2 launch files that need to be launched. After building and sourcing the workspace, the first launch package will be launched using the command `roslaunch kelsey_topics fancy_topic_publisher.launch`. Then, open a clean terminal window, buils and source your workspace and launch the second launch file using `roslaunch kelsey_topcs fancy_topic_subscriber.launch`.
 
 
 ## Getting started
-
-
 Thanks to the launch files on each subpackage, it is straightfoward to get started. Following the instructions in the [Installation and Configuration](#installation-and-configuration) section will launch the desired subpackage. 
 
 Launching the kelsey_actions package will activate the server and client nodes. You will see the time elapsed counter and the time remaining counter report about every second until 5 updates are sent.
 
 Launching the kelsey_services package will activate the server and client nodes. You will also need to include a message (as described in the [Installation and Configuration](#installation-and-configuration)) for the counter to evaluate the number of words in the message. The output should be the number of words in the message you typed in. 
 
-Launching the kelsey_topics package will print out real and imaginary numbers that are randomly generated, and rinted to the concole at 2 Hz.
+Launching the kelsey_topics package will print out real and imaginary numbers that are randomly generated, and rinted to the console at 2 Hz.
 ## Usage
 
 Additional dependencies can be added by editing `package.xml`. If you would like to add additional node files, be sure to make them user-executable by using the command `chmod u+x` in the terminal window after creating the file, and edit the launch file for that subpackage appropriately. This package is derived from the book Programming Robots with ROS: A Practical Introduction to the Robot Operating System by Morgan Quigley, Brian Gerkey, and William Smart (O’Reilly Media, 2015). Information on how to create these packages yourself can be found at http://ricopic.one/courses/robotics_mini_course/ in both print and YouTube videos by Dr. Rico Picone. A great resource for additional information on getting started with ROS can be found at https://risc.readthedocs.io/1-ros-basics.html.
