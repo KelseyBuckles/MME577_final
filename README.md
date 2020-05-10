@@ -14,12 +14,13 @@ This system will work on Linux based machines running Ubuntu Bionic 18.04.4, ROS
 
 ## Installation and configuration
 
-Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and clone this repository from a terminal window in your machine, into a ROS workspace's src directory. Then, navigate to your workspace root, and build the workspace using `catkin_make`. Then, source the workspace using `source devel/setup.bash`. Launch the desired subpackage. For eample, to launch the kelsey_actions subpackage, use `roslaunch kelsey_actions fancy_action.launch`.
+Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and clone this repository from a terminal window in your machine, into a ROS workspace's src directory. Then, navigate to your workspace root, and build the workspace using `catkin_make`. Then, source the workspace using `source devel/setup.bash`. Launch the desired subpackage using the format `roslaunch <name of subpackage> <launch file name>`. For eample, to launch the kelsey_actions subpackage, use `roslaunch kelsey_actions fancy_action.launch`.
 
 
 ## Getting started
 
 |A short guide to using your package. Include important commands, etc.|
+Thanks to the launch files on each subpackage, it is straightfoward to get started. Following the instructions in the Installation and Configuration section will launch the desired subpackage.
 
 ## Usage
 
