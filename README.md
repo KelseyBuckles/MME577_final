@@ -19,12 +19,11 @@ Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and
 
 ## Getting started
 
-|A short guide to using your package. Include important commands, etc.|
-Thanks to the launch files on each subpackage, it is straightfoward to get started. Following the instructions in the Installation and Configuration section will launch the desired subpackage.
 
+Thanks to the launch files on each subpackage, it is straightfoward to get started. Following the instructions in the Installation and Configuration section will launch the desired subpackage.
 ## Usage
 
-|Usage information for key methods and commands.|
+Additional dependencies can be added by editing `package.xml`. If you would like to add additional node files, be sure to make them user-executable by using the command `chmod u+x` in the terminal window after creating the file, and edit the launch file for that subpackage appropriately. This package is derived from the book Programming Robots with ROS: A Practical Introduction to the Robot Operating System by Morgan Quigley, Brian Gerkey, and William Smart (O’Reilly Media, 2015). Information on how to create these packages yourself can be found at http://ricopic.one/courses/robotics_mini_course/ in both print and YouTube videos by Dr. Rico Picone. A great resource for additional information on getting started with ROS can be found at https://risc.readthedocs.io/1-ros-basics.html.
 
 ## Questions
 For further questions, please contact the maintainer and sole contributer of this package, Kelsey Buckles at kelsey.buckles@stmartin.edu.
