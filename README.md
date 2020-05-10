@@ -15,6 +15,7 @@ This system will work on Linux based machines running Ubuntu Bionic 18.04.4, ROS
 ## Installation and configuration
 
 |Instructions for installation and configuration. Assume users know how to install ROS packages and can use `git`.|
+Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and clone this repository from a terminal window in your machine, into a ROS workspace's src directory. Then, navigate to your workspace root, and source the package using 'catkin_make'
 
 ## Getting started
 
