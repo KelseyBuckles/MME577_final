@@ -20,11 +20,11 @@ Once your machine is setup with ROS Melodic Morenia, Python 2, and git, fork and
 ## Getting started
 
 
-Thanks to the launch files on each subpackage, it is straightfoward to get started. Following the instructions in the [Installation and Configuration](#Installation) section will launch the desired subpackage. 
+Thanks to the launch files on each subpackage, it is straightfoward to get started. Following the instructions in the [Installation and Configuration](#installation-and-configuration) section will launch the desired subpackage. 
 
 Launching the kelsey_actions package will activate the server and client nodes. You will see the time elapsed counter and the time remaining counter report about every second until 5 updates are sent.
 
-Launching the kelsey_services package will activate the server and client nodes. You will also need to include a message (as described in the Installation and Configuration section) for the counter to evaluate the number of words in the message. The output should be the number of words in the message you typed in. 
+Launching the kelsey_services package will activate the server and client nodes. You will also need to include a message (as described in the [Installation and Configuration](#installation-and-configuration)) for the counter to evaluate the number of words in the message. The output should be the number of words in the message you typed in. 
 
 Launching the kelsey_topics package will print out real and imaginary numbers that are randomly generated, and rinted to the concole at 2 Hz.
 ## Usage
